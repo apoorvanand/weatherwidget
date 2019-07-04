@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "Dani Akash S",
   "license": "ISC",
@@ -14,6 +16,8 @@
     "dark-sky": "^1.0.10",
     "dotenv": "^4.0.0",
     "express": "^4.15.3",
-    "node-geocoder": "^3.18.0"
-  }
+    "node-geocoder": "^3.18.0",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
